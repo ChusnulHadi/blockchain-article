@@ -2,6 +2,14 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 
+:root {
+  --color1: #201473;
+  --color2: #272b73;
+  --color3: #2e608c;
+  --color4: #499ebf;
+  --color5: #5cf2e3;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Rubik", "Monserrat", sand-serif;
@@ -17,7 +25,7 @@ body::-webkit-scrollbar {
 }
 
 header {
-  background-color: #201473;
+  background-color: var(--color1);
   padding: 1.5em 0;
   z-index: 2;
   position: relative;
@@ -42,8 +50,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #5cf2e3;
-  border-bottom: 1px solid #5cf2e3;
+  color: var(--color5);
+  border-bottom: 1px solid var(--color5);
   padding-bottom: 0.15em;
   font-weight: bold;
 }
@@ -66,10 +74,15 @@ main {
   width: 100vw;
 }
 
+article {
+  padding: 0 5em;
+}
+
 .home {
   padding: 5em;
-  height: 100vh;
+  height: 100%;
   min-height: 100vh;
+  /* min-height: 100vh; */
 
   display: flex;
   flex-direction: column;
@@ -83,14 +96,15 @@ main {
 }
 .home h1 {
   width: fit-content;
-  margin-top: 0;
+  margin: 0;
+  margin-bottom: 1em;
   color: transparent;
   font-size: 6em;
   font-weight: normal;
   letter-spacing: 0.1em;
 
   text-transform: uppercase;
-  -webkit-text-stroke: 3px #5cf2e3;
+  -webkit-text-stroke: 3px var(--color5);
 
   font-family: "Staatliches", cursive;
 }
@@ -100,9 +114,9 @@ main {
   width: 10em;
   text-decoration: none;
   font-size: 1.5em;
-  color: #5cf2e3;
+  color: var(--color5);
   padding: 1em 2em;
-  border: 3px solid #5cf2e3;
+  border: 3px solid var(--color5);
   position: relative;
 }
 .home .button::before,
@@ -130,9 +144,54 @@ main {
   height: calc(100% + 27px);
 }
 
-/* .whatis {
-    
-} */
+.overview {
+  /* margin-top: 1em; */
+  padding: 5em auto;
+
+  color: black;
+  font-size: 1.25em;
+  /* text-shadow: #272b73; */
+
+  display: flex;
+  flex-direction: row;
+  flex-basis: 50%;
+
+  /* background: linear-gradient( var(--color1),var(--color3)); */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.overview .leftside,
+.overview .rightside {
+  width: 50%;
+}
+
+.overview .rightside {
+    padding: 3em auto;
+    text-align: center;
+}
+
+.overview .rightside img {
+    margin: 0 auto;
+    /* width: 100%; */
+    max-height: 300px;
+}
+
+p {
+  text-align: justify;
+}
+
+@media screen and (max-width: 800px) {
+    .overview {
+        flex-direction: column;
+    }
+
+    .overview .leftside,
+    .overview .rightside {
+        margin: auto;
+        width: 80%
+    }
+}
 
 @media screen and (max-width: 513px) {
   nav ul {
@@ -141,12 +200,16 @@ main {
   }
 
   nav ul li:hover {
-    background-color: #5cf2e3;
+    background-color: var(--color5);
   }
 
   nav ul li a:hover {
-    color: #201473;
+    color: var(--color1);
     border-bottom: none;
+  }
+
+  article {
+    padding: 2.5em;
   }
 
   .home {
@@ -164,5 +227,10 @@ main {
 
   .home .button {
     margin: 0 auto;
+  }
+
+  .overview .leftside,
+  .overview .rightside {
+    width: 100%;
   }
 }
