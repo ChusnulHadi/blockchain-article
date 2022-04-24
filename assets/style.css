@@ -16,7 +16,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -160,6 +160,8 @@ article {
   flex-direction: row;
   flex-basis: 50%;
 
+  /* text-align: ; */
+
   /* background: linear-gradient( var(--color1),var(--color3)); */
   background-size: cover;
   background-repeat: no-repeat;
@@ -168,6 +170,11 @@ article {
 .overview .leftside,
 .overview .rightside {
   width: 50%;
+  margin: 0;
+}
+
+.overview .leftside {
+  margin: 0;
 }
 
 .overview .rightside {
@@ -190,7 +197,7 @@ aside {
   flex-direction: column;
 
   max-width: 80%;
-  margin: 0 auto;
+  margin: 2em auto;
 
   text-align: center;
   justify-content: space-around;
@@ -215,6 +222,25 @@ th {
   border-radius: 5px;
   padding: 30px;
   margin-top: 20px;
+  /* margin: auto 2em; */
+}
+
+#whatis {
+  text-align: center;
+  padding: 5em auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#whatis p {
+  text-align: justify;
+  font-size: 1.25em;
+}
+
+#whatis img {
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 footer {
@@ -224,18 +250,24 @@ footer {
 
   font-weight: bold;
 
-  padding:2em;
+  padding: 2em;
 }
 
 @media screen and (max-width: 800px) {
   .overview {
     flex-direction: column;
+    text-align: center;
+    /* padding: 0; */
   }
 
   .overview .leftside,
   .overview .rightside {
-    margin: auto;
-    width: 80%;
+    margin: 0;
+    width: 100%;
+  }
+
+  #whatis img {
+    max-width: 100%;
   }
 }
 
