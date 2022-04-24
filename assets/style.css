@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Rubik:wght@300&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 
 * {
   box-sizing: border-box;
@@ -13,7 +13,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 header {
@@ -67,66 +67,75 @@ main {
 }
 
 .home {
-    /* background-image: url(./images/rack-server.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; */
-}
+  padding: 2em;
+  width: 100vw;
+  height: 100vh;
 
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url("./images/rack-server.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: -50px;
+  background-clip: border-box;
+  background-size: cover;
+}
 .home h1 {
-    position: absolute;
-    z-index: 5;
-    color: white;
-    font-size: 5em;
-    font-weight: normal;
-    letter-spacing: 0.1em;
-    left: 1.5em;
-    text-transform: uppercase;
+  /* position: relative; */
+  width: fit-content;
+  /* z-index: 5; */
+  margin-top: 0;
+  /* padding-top: 1em; */
+  color: transparent;
+  font-size: 6em;
+  /* scale: 50px; */
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  /* left: 1.5em; */
+  text-transform: uppercase;
+  /* stroke-width: 1px; */
+  -webkit-text-stroke: 3px #5cf2e3;
 
-    font-family: 'Staatliches', cursive;
-}
-
-.home img {
-    width: 100vw;
-    top: -2.5em;
-    z-index: 0;
-    position: relative;
+  font-family: "Staatliches", cursive;
 }
 
 /* button */
 .home .button {
-    top: 30em;
-    left: 3em;
-    text-decoration: none;
-    font-size: 25px;
-    color: #5CF2E3;
-    padding: 20px 50px;
-    border: 3px solid #5CF2E3;
-    position: relative;
-    z-index: 3;
+  /* margin-top: 0px; */
+  top: 80px;
+  left: 1.5em;
+  /* text-align: center; */
+  margin: 0 auto;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #5cf2e3;
+  padding: 1em 2em;
+  border: 3px solid #5cf2e3;
+  position: relative;
+  z-index: 3;
 }
 .home .button::before,
 .home .button::after {
-    content: "";
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    border: inherit;
-    transition: all .5s;
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: inherit;
+  transition: all 0.5s;
 }
 .home .button::before {
-    top : -15px;
-    left: -15px;
-    border-width: 3px 0 0 3px;
+  top: -15px;
+  left: -15px;
+  border-width: 3px 0 0 3px;
 }
 .home .button::after {
-    bottom: -15px;
-    right: -15px;
-    border-width: 0 3px 3px 0;
+  bottom: -15px;
+  right: -15px;
+  border-width: 0 3px 3px 0;
 }
 .home .button:hover::before,
 .home .button:hover::after {
-    width: calc(100% + 27px);
-    height: calc(100% + 27px);
+  width: calc(100% + 27px);
+  height: calc(100% + 27px);
 }
 
 @media screen and (max-width: 513px) {
@@ -140,7 +149,31 @@ main {
   }
 
   nav ul li a:hover {
-    color: white;
+    color: #201473;
     border-bottom: none;
+  }
+
+  .home {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("./images/rack-server.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -50px;
+    background-clip: border-box;
+    background-size: cover;
+  }
+
+  .home h1 {
+    text-align: center;
+    font-size: 5em;
+  }
+
+  .home .button {
+    /* left: auto; */
+    /* align-content: center; */
+    /* margin: 0 auto; */
+    /* text-align: center; */
+    /* position: relative; */
+    left: 3em;
   }
 }
