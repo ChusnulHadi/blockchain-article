@@ -181,6 +181,38 @@ p {
   text-align: justify;
 }
 
+aside {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 80%;
+    margin: 0 auto;
+
+    text-align: center;
+    justify-content: space-around;
+}
+
+
+aside table {
+    text-align: left;
+    /* border: 1px solid black; */
+    height: 80%;
+    /* border-collapse: collapse; */
+}
+
+td, th {
+    /* border: 1px solid black;
+    border-collapse: collapse; */
+    padding: 0.25em;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 20px;
+  }
+
 @media screen and (max-width: 800px) {
     .overview {
         flex-direction: column;
