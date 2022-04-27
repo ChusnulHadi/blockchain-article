@@ -267,6 +267,35 @@ footer {
   padding: 2em;
 }
 
+#uses {
+  margin: 0.5em 2em;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  
+  /* flex-basis: 30%; */
+  /* width: 40vw; */
+  min-width: 30vw;
+  text-align: center;
+
+  /* margin: 0.5em 2em; */
+}
+
+.wrapper div {
+  margin: 0 auto;
+  width: 35%;
+}
+
+.wrapper .card {
+  margin:1em;
+}
+
+.wrapper img {
+  width: 50%;
+}
+
 @media screen and (max-width: 800px) {
   .overview {
     flex-direction: column;
@@ -286,6 +315,14 @@ footer {
 
   #whatis img {
     max-width: 100%;
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .wrapper div {
+    width: 90%;
   }
 }
 
@@ -329,5 +366,15 @@ footer {
   .overview .leftside,
   .overview .rightside {
     width: 100%;
+  }
+
+  .wrapper div {
+    margin:0;
+    width: 100%;
+  }
+
+  .wrapper .card {
+    margin: 0.5em 0;
+    padding: 0.5em;
   }
 }
