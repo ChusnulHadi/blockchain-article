@@ -18,7 +18,7 @@
                     <a href="#uses">Cara Kerja</a>
                 </li>
                 <li>
-                    <a href="#">Kenapa blockchain?</a>
+                    <a href="#why">Kenapa blockchain?</a>
                 </li>
                 <li>
                     <a href="#">Sejarah</a>
@@ -127,17 +127,21 @@
                             </li>
                             <li>
                                 <p>
-                                    Bilangan bulat 32-bit disebut nonce. Nonce dihasilkan secara acak ketika sebuah blok dibuat, yang kemudian menghasilkan hash header blok.
+                                    Bilangan bulat 32-bit disebut nonce. Nonce dihasilkan secara acak ketika sebuah blok
+                                    dibuat, yang kemudian menghasilkan hash header blok.
                                 </p>
                             </li>
                             <li>
                                 <p>
-                                    Hash adalah nomor 256-bit yang digabungkan dengan nonce. Itu harus dimulai dengan sejumlah besar angka nol (yaitu, menjadi sangat kecil).
+                                    Hash adalah nomor 256-bit yang digabungkan dengan nonce. Itu harus dimulai dengan
+                                    sejumlah besar angka nol (yaitu, menjadi sangat kecil).
                                 </p>
                             </li>
                         </ul>
                         <p>
-                            Ketika blok pertama dari sebuah rantai dibuat, sebuah nonce menghasilkan hash kriptografis. Data di blok dianggap ditandatangani dan selamanya terikat dengan nonce dan hash kecuali jika ditambang.
+                            Ketika blok pertama dari sebuah rantai dibuat, sebuah nonce menghasilkan hash kriptografis.
+                            Data di blok dianggap ditandatangani dan selamanya terikat dengan nonce dan hash kecuali
+                            jika ditambang.
                         </p>
                     </div>
                     <div class="card">
@@ -147,36 +151,99 @@
                             Penambang membuat blok baru pada rantai melalui proses yang disebut penambangan.
                         </p>
                         <p>
-                            Dalam blockchain, setiap blok memiliki nonce dan hash uniknya sendiri, tetapi juga merujuk pada hash dari blok sebelumnya dalam rantai, jadi menambang sebuah blok tidaklah mudah, terutama pada rantai besar.
+                            Dalam blockchain, setiap blok memiliki nonce dan hash uniknya sendiri, tetapi juga merujuk
+                            pada hash dari blok sebelumnya dalam rantai, jadi menambang sebuah blok tidaklah mudah,
+                            terutama pada rantai besar.
                         </p>
                         <p>
-                            Penambang menggunakan perangkat lunak khusus untuk memecahkan masalah matematika yang sangat kompleks dalam menemukan nonce yang menghasilkan hash yang diterima. Karena nonce hanya 32 bit dan hash 256, ada kira-kira empat miliar kemungkinan kombinasi nonce-hash yang harus ditambang sebelum yang tepat ditemukan. Ketika itu terjadi, penambang dikatakan telah menemukan "nonce emas" dan blok mereka ditambahkan ke rantai.
+                            Penambang menggunakan perangkat lunak khusus untuk memecahkan masalah matematika yang sangat
+                            kompleks dalam menemukan nonce yang menghasilkan hash yang diterima. Karena nonce hanya 32
+                            bit dan hash 256, ada kira-kira empat miliar kemungkinan kombinasi nonce-hash yang harus
+                            ditambang sebelum yang tepat ditemukan. Ketika itu terjadi, penambang dikatakan telah
+                            menemukan "nonce emas" dan blok mereka ditambahkan ke rantai.
                         </p>
                         <p>
-                            Membuat perubahan ke blok mana pun di awal rantai membutuhkan penambangan ulang tidak hanya blok dengan perubahan, tetapi semua blok yang datang setelahnya. Inilah mengapa sangat sulit untuk memanipulasi teknologi blockchain. Anggap saja sebagai "keamanan dalam matematika" karena menemukan nonce emas membutuhkan banyak waktu dan daya komputasi.
+                            Membuat perubahan ke blok mana pun di awal rantai membutuhkan penambangan ulang tidak hanya
+                            blok dengan perubahan, tetapi semua blok yang datang setelahnya. Inilah mengapa sangat sulit
+                            untuk memanipulasi teknologi blockchain. Anggap saja sebagai "keamanan dalam matematika"
+                            karena menemukan nonce emas membutuhkan banyak waktu dan daya komputasi.
                         </p>
                         <p>
-                            Ketika sebuah blok berhasil ditambang, perubahan tersebut diterima oleh semua node di jaringan dan penambang dihargai secara finansial.
+                            Ketika sebuah blok berhasil ditambang, perubahan tersebut diterima oleh semua node di
+                            jaringan dan penambang dihargai secara finansial.
                         </p>
                     </div>
                     <div class="card">
                         <img src="./assets/images/node.png" alt="node">
                         <h3>Node</h3>
                         <p>
-                            Salah satu konsep terpenting dalam teknologi blockchain adalah desentralisasi. Tidak ada satu komputer atau organisasi yang dapat memiliki rantai tersebut. Sebaliknya, ini adalah buku besar yang didistribusikan melalui node yang terhubung ke rantai. Node dapat berupa perangkat elektronik apa pun yang menyimpan salinan blockchain dan menjaga jaringan tetap berfungsi.
+                            Salah satu konsep terpenting dalam teknologi blockchain adalah desentralisasi. Tidak ada
+                            satu komputer atau organisasi yang dapat memiliki rantai tersebut. Sebaliknya, ini adalah
+                            buku besar yang didistribusikan melalui node yang terhubung ke rantai. Node dapat berupa
+                            perangkat elektronik apa pun yang menyimpan salinan blockchain dan menjaga jaringan tetap
+                            berfungsi.
                         </p>
                         <p>
-                            Setiap node memiliki salinan blockchainnya sendiri dan jaringan harus secara algoritme menyetujui setiap blok yang baru ditambang agar rantai dapat diperbarui, dipercaya, dan diverifikasi. Karena blockchain transparan, setiap tindakan dalam buku besar dapat dengan mudah diperiksa dan dilihat. Setiap peserta diberikan nomor identifikasi alfanumerik unik yang menunjukkan transaksi mereka.
+                            Setiap node memiliki salinan blockchainnya sendiri dan jaringan harus secara algoritme
+                            menyetujui setiap blok yang baru ditambang agar rantai dapat diperbarui, dipercaya, dan
+                            diverifikasi. Karena blockchain transparan, setiap tindakan dalam buku besar dapat dengan
+                            mudah diperiksa dan dilihat. Setiap peserta diberikan nomor identifikasi alfanumerik unik
+                            yang menunjukkan transaksi mereka.
                         </p>
                         <p>
-                            Menggabungkan informasi publik dengan sistem checks-and-balances membantu blockchain menjaga integritas dan menciptakan kepercayaan di antara pengguna. Pada dasarnya, blockchain dapat dianggap sebagai skalabilitas kepercayaan melalui teknologi.
+                            Menggabungkan informasi publik dengan sistem checks-and-balances membantu blockchain menjaga
+                            integritas dan menciptakan kepercayaan di antara pengguna. Pada dasarnya, blockchain dapat
+                            dianggap sebagai skalabilitas kepercayaan melalui teknologi.
                         </p>
                     </div>
                 </div>
             </article>
-            <article id="why">
-                
-            </article>
+            <article id="why" class="overview card">
+                <div class="leftside">
+
+                    <h2>kenapa menggunakan blockchain</h2>
+                    <p>Penggunaan Blockchain yang paling terkenal (dan mungkin paling kontroversial) adalah dalam
+                        cryptocurrency. Cryptocurrency adalah mata uang digital (atau token), seperti Bitcoin, Ethereum
+                        atau Litecoin, yang dapat digunakan untuk membeli barang dan jasa. Sama seperti bentuk uang
+                        digital, kripto dapat digunakan untuk membeli semuanya mulai dari makan siang hingga rumah Anda
+                        berikutnya. Tidak seperti uang tunai, kripto menggunakan blockchain untuk bertindak sebagai buku
+                        besar publik dan sistem keamanan kriptografi yang ditingkatkan, sehingga transaksi online selalu
+                        dicatat dan diamankan.
+                    </p>
+                </div>
+                <div class="rightside">
+                    <img src="./assets/images/cryptocurrency.jpg" alt="server">
+                </div>
+                <p>
+                    Berikut adalah beberapa alasan utama mengapa semua orang tiba-tiba memperhatikan cryptocurrency:
+                </p>
+                <ul>
+                    <li>
+                        <p>
+                            Keamanan Blockchain membuat pencurian menjadi lebih sulit karena setiap cryptocurrency
+                            memiliki nomor identitasnya sendiri yang tidak dapat disangkal yang melekat pada satu
+                            pemilik.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Crypto mengurangi kebutuhan akan mata uang individual dan bank sentral- Dengan blockchain, crypto dapat dikirim ke mana saja dan siapa saja di dunia tanpa perlu pertukaran mata uang atau tanpa campur tangan dari bank sentral.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Cryptocurrency dapat membuat beberapa orang kaya- Spekulan telah menaikkan harga crypto, terutama Bitcoin, membantu beberapa pengguna awal menjadi miliarder. Apakah ini benar-benar positif belum terlihat, karena beberapa retraktor percaya bahwa spekulan tidak memikirkan manfaat jangka panjang dari crypto.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Semakin banyak perusahaan besar yang datang ke ide mata uang digital berbasis blockchain untuk pembayaran. Pada Februari 2021, Tesla dengan terkenal mengumumkan bahwa mereka akan menginvestasikan $ 1,5 miliar ke dalam Bitcoin dan menerimanya sebagai pembayaran untuk mobil mereka.
+                        </p>
+                    </li>
+                </ul>
+                <p>
+                    Apakah mata uang digital adalah masa depan masih harus dilihat. Untuk saat ini, sepertinya kebangkitan meteorik blockchain lebih mulai mengakar dalam kenyataan daripada hype murni. Meskipun masih membuat kemajuan di bidang yang sepenuhnya baru dan sangat eksploratif ini, blockchain juga menunjukkan janji di luar Bitcoin.
+                </p>
         </div>
         <aside class="card">
             <h3>Dibuat Oleh</h3>

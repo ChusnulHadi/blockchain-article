@@ -69,6 +69,10 @@ li {
   margin: 0.15em;
 }
 
+h2 {
+  text-transform: capitalize;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -288,12 +292,26 @@ footer {
   width: 35%;
 }
 
+.wrapper li {
+  list-style-type: disc;
+}
+
 .wrapper .card {
   margin:1em;
 }
 
 .wrapper img {
   width: 50%;
+}
+
+#why img {
+  margin-top: 2em;
+  width: 100%;
+  height: auto;
+}
+
+#why li {
+  list-style-type: disc;
 }
 
 @media screen and (max-width: 800px) {
